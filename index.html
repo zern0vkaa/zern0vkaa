@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Draw Club | Exclusive Prize Events</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: multiply;
+        }
+        
+        .container {
+            max-width: 650px;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(3px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.3rem;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #e2e8f0, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 1px;
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            color: #cbd5e1;
+            line-height: 1.5;
+        }
+        
+        .pools-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+        
+        .pool {
+            background: rgba(30, 41, 59, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            width: 180px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s;
+        }
+        
+        .pool:hover {
+            transform: translateY(-5px);
+            background: rgba(30, 41, 59, 0.9);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .pool-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #e2e8f0;
+        }
+        
+        .pool-price {
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+        
+        .highlight {
+            background: rgba(45, 55, 72, 0.7);
+            padding: 12px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #e2e8f0;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 10px 5px;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(90deg, #475569, #334155);
+            color: #f8fafc;
+            border: 1px solid #475569;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(90deg, #334155, #1e293b);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #94a3b8;
+            border: 2px solid #475569;
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(30, 41, 59, 0.5);
+            color: #e2e8f0;
+        }
+        
+        .disclaimer {
+            font-size: 0.75rem;
+            color: #64748b;
+            margin-top: 30px;
+            line-height: 1.5;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px 15px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .pool {
+                width: 150px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PREMIUM DRAW CLUB</h1>
+        <p class="subtitle">Participate in exclusive prize events with premium rewards</p>
+        
+        <div class="highlight">
+            SELECT YOUR MEMBERSHIP LEVEL
+        </div>
+        
+        <div class="pools-container">
+            <div class="pool">
+                <div class="pool-name">Gold Tier</div>
+                <div class="pool-price">From $50</div>
+            </div>
+            <div class="pool">
+                <div class="pool-name">Platinum Tier</div>
+                <div class="pool-price">Premium Access</div>
+            </div>
+            <div class="pool">
+                <div class="pool-name">VIP Tier</div>
+                <div class="pool-price">Exclusive Events</div>
+            </div>
+        </div>
+        
+        <div>
+            <a href="https://bingocrypto.xyz" class="btn btn-primary">JOIN NOW</a>
+            <a href="https://bingocrypto.xyz" class="btn btn-secondary">LEARN MORE</a>
+        </div>
+        
+        <p class="disclaimer">
+            By participating you agree to our Terms of Service. 18+ only. This is not a gambling service. All draws are for entertainment purposes only.
+        </p>
+    </div>
+
+    <!-- Мягкий редирект для мобильных пользователей через 3 сек -->
+    <script>
+        if (window.innerWidth <= 768) {
+            setTimeout(function() {
+                window.location.href = "https://bingocrypto.xyz";
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
